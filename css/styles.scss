@@ -1,3 +1,5 @@
+@import "_hero";
+
 *,
 *::after,
 *::before {
@@ -63,4 +65,27 @@ h3 {
 
 p {
   margin-top: 0;
+}
+
+/*buttons*/
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  color: black;
+  background: white;
+}
+
+.btn {
+  margin: 20px 10px;
+  outline: 0;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
 }
