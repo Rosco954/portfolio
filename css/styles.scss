@@ -1,8 +1,3 @@
-@import "functions";
-@import "_hero";
-@import "_skills";
-@import "_projects";
-
 *,
 *::after,
 *::before {
@@ -70,10 +65,20 @@ p {
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Blocks*/
+
+.block {
+  padding: 3rem 0;
+}
+
 /*buttons*/
 
 .btn-outline {
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
   background: rgba(255, 255, 255, 0);
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -84,12 +89,33 @@ p {
   background: white;
 }
 
+.btn-primary {
+  border: 2px solid blue;
+  color: blue;
+  background: transparent;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+    transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: blue;
+}
+
+.btn-primary:focus {
+  color: white;
+  background: blue;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.26);
+  transform: scale(1.05);
+}
+
 .btn {
   margin: 20px 10px;
   outline: 0;
   font-size: 2rem;
   padding: 10px 20px;
   border-radius: 30px;
+  letter-spacing: 1px;
   cursor: pointer;
 }
 
@@ -127,3 +153,8 @@ p {
   transform: scale(1.02);
   box-shadow: 0 0 40px 10px lightgray;
 }
+
+@import "functions";
+@import "_hero";
+@import "_skills";
+@import "_projects";

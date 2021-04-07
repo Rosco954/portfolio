@@ -1,3 +1,168 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 0.7rem;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Blocks*/
+.block {
+  padding: 3rem 0;
+}
+
+/*buttons*/
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  color: black;
+  background: white;
+}
+
+.btn-primary {
+  border: 2px solid blue;
+  color: blue;
+  background: transparent;
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out, -webkit-box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: blue;
+}
+
+.btn-primary:focus {
+  color: white;
+  background: blue;
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.26);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.btn {
+  margin: 20px 10px;
+  outline: 0;
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*lists*/
+.list {
+  padding-left: 40px;
+}
+
+.list__item {
+  line-height: 1.8;
+  font-size: 2.2rem;
+  font-weight: 600;
+  list-style: none;
+  list-style-image: url(../images/tick.svg);
+}
+
+/*Cards*/
+.card {
+  -webkit-box-shadow: 0 0 20px 10px rgba(116, 116, 116, 0.486);
+          box-shadow: 0 0 20px 10px rgba(116, 116, 116, 0.486);
+  margin: 30px 10px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 700px;
+  background-image: linear-gradient(300deg, rgba(2, 0, 36, 0) 0%, #fffefe 50%), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 0 0 40px 10px lightgray;
+          box-shadow: 0 0 40px 10px lightgray;
+}
+
 .hero {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(2, 0, 36, 0)), color-stop(40%, rgba(0, 0, 0, 0.89))), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
@@ -145,134 +310,95 @@
           align-items: center;
 }
 
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.projects__switches {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-::-moz-selection {
-  background: var(--color-primary);
+.switch {
+  margin: 0 40px;
+}
+
+.projects__container {
+  margin: 45px auto 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
+  width: 70%;
+}
+
+.test-block {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: black;
+  border-radius: 20px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.test-block:hover {
+  width: 300px;
+  height: 300px;
+  background: black;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  background: blue;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.description:hover {
+  opacity: 1;
+}
+
+.description__heading {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
   color: white;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
 }
 
-::selection {
-  background: var(--color-primary);
+.description__text {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
   color: white;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: var(--color-body);
-  font-size: 2.4rem;
-  line-height: 1.5;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-h1,
-h2,
-h3 {
-  color: var(--color-headings);
-  margin-bottom: 0.7rem;
-  line-height: 1.1;
-}
-
-@media screen and (min-width: 1024px) {
-  body {
-    font-size: 1.8rem;
-  }
-  h1 {
-    font-size: 8rem;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  h3 {
-    font-size: 2.4rem;
-  }
-}
-
-h1 {
-  font-size: 7rem;
-}
-
-h2 {
-  font-size: 4rem;
-}
-
-h3 {
-  font-size: 3rem;
-  font-weight: 500;
-}
-
-p {
-  margin-top: 0;
-}
-
-/*buttons*/
-.btn-outline {
-  border: 1px solid white;
-  color: white;
-  background: rgba(255, 255, 255, 0);
-  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.btn-outline:hover {
-  color: black;
-  background: white;
-}
-
-.btn {
-  margin: 20px 10px;
-  outline: 0;
-  font-size: 2rem;
-  padding: 10px 20px;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-/*lists*/
-.list {
-  padding-left: 40px;
-}
-
-.list__item {
-  line-height: 1.8;
-  font-size: 2.2rem;
-  font-weight: 600;
-  list-style: none;
-  list-style-image: url(../images/tick.svg);
-}
-
-/*Cards*/
-.card {
-  -webkit-box-shadow: 0 0 20px 10px rgba(116, 116, 116, 0.486);
-          box-shadow: 0 0 20px 10px rgba(116, 116, 116, 0.486);
-  margin: 30px 10px;
-  padding: 15px;
-  border-radius: 5px;
-  width: 700px;
-  background-image: linear-gradient(300deg, rgba(2, 0, 36, 0) 0%, #fffefe 50%), url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-  -webkit-transition: -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
-  transition: -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
-  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -webkit-box-shadow 0.25s ease-in-out;
-}
-
-.card:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-  -webkit-box-shadow: 0 0 40px 10px lightgray;
-          box-shadow: 0 0 40px 10px lightgray;
+  letter-spacing: 1.2;
 }
 /*# sourceMappingURL=styles.css.map */
