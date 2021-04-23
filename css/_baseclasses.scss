@@ -82,10 +82,10 @@ a {
 /*Blocks*/
 
 .glass {
-  background-color: linear-gradient(
-    225deg,
-    rgba(255, 255, 255, 0.93) 0%,
-    rrgba(255, 255, 255, 0.2) 100%
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.2) 100%
   );
   backdrop-filter: blur(10px);
 }

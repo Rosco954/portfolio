@@ -79,7 +79,7 @@ a {
 
 /*Blocks*/
 .glass {
-  background-color: linear-gradient(225deg, rgba(255, 255, 255, 0.93) 0%, rrgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.2) 100%);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -189,7 +189,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: linear-gradient(49deg, #8ec5fc 0%, #e0c3fc 100%);
+  background-image: linear-gradient(45deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 .hero__container {
@@ -320,61 +320,86 @@ header {
           backdrop-filter: blur(20px);
 }
 
-.card-container {
+.about {
+  position: relative;
+  background-image: linear-gradient(135deg, #8ec5fc 0%, #e0c3fc 100%);
+  overflow: hidden;
+  padding: 90px 20px;
+}
+
+.about__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  gap: 0px;
-  width: 1500px;
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  gap: 200px;
+  width: 70%;
   margin: 0 auto;
 }
 
-.logos-container {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__text {
+  padding: 30px;
+  border-radius: 25px;
+  color: #616161;
 }
 
-.skills__logo {
-  margin: 0 20px;
-  height: 120px;
-  width: auto;
+.about__text h2 {
+  font-size: 7rem;
+  margin-bottom: 15px;
 }
 
-.skills__logo-jquery {
-  margin: 0 20px;
-  height: 100px;
-  width: auto;
+.about__text p {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
 }
 
-.skills__logo-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about__logo-container {
+  border-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px 5px;
+}
+
+.logo-img-sm, .logo-img-lg {
+  width: 120px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.logo-img-lg {
+  width: 260px;
+}
+
+.about__circle1 {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 320px;
+  left: 100px;
+  background-image: linear-gradient(49deg, #2929ff88 0%, #807eff5e 100%);
+}
+
+.about__circle2 {
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 40px;
+  right: 100px;
+  background-image: linear-gradient(315deg, #a239f788 30%, #f374ff 100%);
 }
 
 .projects__switches {
