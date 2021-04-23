@@ -6,10 +6,14 @@
   margin: 0 40px;
 }
 
+#landing-pages {
+  display: none;
+}
+
 .projects__container {
   margin: 45px auto 0;
-  @include grid(3, 2, 0px);
-  width: 70%;
+  @include grid(3, 1, 0px);
+  width: 60%;
 }
 
 .test-block {
@@ -19,20 +23,49 @@
   background: black;
   border-radius: 20px;
   justify-self: center;
+  overflow: hidden;
+  margin: 40px 0;
+  box-shadow: 0 20px 50px black;
 }
 
-.test-block:hover {
-  width: 300px;
-  height: 300px;
-  background: black;
+.email__img {
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.email2__img {
+  height: 100%;
+  border-radius: 20px;
+  object-fit: contain;
+  object-position: -20px;
+}
+
+.email3__img {
+  object-fit: contain;
+  object-position: -160px;
+}
+
+.email4__img {
+  object-fit: contain;
+  object-position: -160px;
+}
+
+.email5__img {
+  object-fit: contain;
+  object-position: -170px;
 }
 
 .description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   @include flex(column, center, center);
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
-  background: blue;
+  background: rgba(0, 0, 0, 0.877);
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
 }

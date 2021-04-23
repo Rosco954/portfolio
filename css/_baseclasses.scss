@@ -1,0 +1,175 @@
+//variables
+
+$primary: #3c91ff;
+$secondary: #807eff;
+$accent: #b255ff;
+
+//typography
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 0.7rem;
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+
+h1 {
+  font-size: 7rem;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Blocks*/
+
+.glass {
+  background-color: linear-gradient(
+    225deg,
+    rgba(255, 255, 255, 0.93) 0%,
+    rrgba(255, 255, 255, 0.2) 100%
+  );
+  backdrop-filter: blur(10px);
+}
+
+.block {
+  padding: 3rem 0;
+}
+
+/*buttons*/
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-outline:hover {
+  color: black;
+  background: white;
+}
+
+.btn-primary {
+  border: 2px solid $primary;
+  color: $primary;
+  background: transparent;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
+    transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: white;
+  background: $primary;
+}
+
+.btn-primary:focus {
+  color: white;
+  background: darken($primary, 15%);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.26);
+  transform: scale(1.05);
+}
+
+.btn {
+  margin: 20px 10px;
+  outline: 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*lists*/
+.list {
+  padding-left: 40px;
+}
+
+.list__item {
+  line-height: 1.8;
+  font-size: 2.2rem;
+  font-weight: 600;
+  list-style: none;
+  list-style-image: url(../images/tick.svg);
+}
+
+/*Cards*/
+
+.card {
+  box-shadow: 0 0 20px 10px rgba(116, 116, 116, 0.486);
+  margin: 30px 10px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 700px;
+  background-image: linear-gradient(
+      300deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgb(255, 254, 254) 50%
+    ),
+    url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px 10px lightgray;
+}
