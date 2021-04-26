@@ -15,10 +15,10 @@
   </head>
   <body>
     <header>
-      <div class="circle"></div>
-      <div class="circle2"></div>
-      <div class="square"></div>
-      <div class="polygon"></div>
+      <div class="circle header-shape"></div>
+      <div class="circle2 header-shape"></div>
+      <div class="square header-shape"></div>
+      <div class="polygon header-shape"></div>
       <div class="hero__container glass">
         <div class="hero__block1">
           <h1>Matthew Carapazza</h1>
@@ -31,7 +31,7 @@
           <img class="hero__img" src="./images/boy_tran_bg.png" alt="" />
           <?xml version="1.0" encoding="iso-8859-1"?>
           <svg
-            class="hero__svg1"
+            class="hero__svg1 hero-svg"
             version="1.1"
             id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +137,7 @@
           </svg>
           <?xml version="1.0" encoding="iso-8859-1"?>
           <svg
-            class="hero__svg2"
+            class="hero__svg2 hero-svg"
             version="1.1"
             id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +172,7 @@
           </svg>
           <?xml version="1.0" encoding="iso-8859-1"?>
           <svg
-            class="hero__svg3"
+            class="hero__svg3 hero-svg"
             version="1.1"
             id="Capa_1"
             xmlns="http://www.w3.org/2000/svg"
@@ -342,9 +342,9 @@
         </div>
       </div>
     </header>
-    <section class="block about">
-      <div class="about__circle1"></div>
-      <div class="about__circle2"></div>
+    <section id="about" class="block about">
+      <div class="about__circle1 about-shape"></div>
+      <div class="about__circle2 about-shape"></div>
       <div class="about__container">
         <div class="about__text glass">
           <h2>About Me</h2>
@@ -359,41 +359,41 @@
         </div>
         <div class="about__logo-container glass">
           <img
-            class="logo-img-sm"
+            class="logo-img-sm logo"
             src="./images/html_logo.png"
             alt="HTML5 Logo"
           />
           <img
-            class="logo-img-sm"
+            class="logo-img-sm logo"
             src="./images/css_logo.png"
             alt="CSS3 Logo"
           />
           <img
-            class="logo-img-sm"
+            class="logo-img-sm logo"
             src="./images/js_logo.png"
             alt="Java Script Logo"
           />
           <img
-            class="logo-img-sm"
+            class="logo-img-sm logo"
             src="./images/sass_logo.png"
             alt="SASS Logo"
           />
           <img
-            class="logo-img-lg"
+            class="logo-img-lg logo"
             src="./images/JQuery-Logo.png"
             alt="JQuery Logo"
           />
           <img
-            class="logo-img-lg"
+            class="logo-img-lg logo"
             src="./images/ajax_logo.png"
             alt="Ajax Logo"
           />
         </div>
       </div>
     </section>
-    <section id="projects-section" class="block projects">
-      <div class="projects__square1"></div>
-      <div class="projects__square2"></div>
+    <section id="projects" class="block projects">
+      <div class="projects__square1 project-shape"></div>
+      <div class="projects__square2 project-shape"></div>
       <div class="projects__switches">
         <button autofocus id="email-switch" class="btn btn-primary switch">
           HTML Emails
@@ -407,13 +407,19 @@
       </div>
       <div id="emails" class="projects__container glass">
         <div class="test-block">
-          <img class="email__img" src="./images/email_nakedwines.jpg" alt="" />
+          <img
+            class="email__img"
+            src="./images/email_nakedwines.jpg"
+            alt="HTML email project one naked wines newsletter"
+          />
           <div class="description">
             <h4 class="description__heading">Newsletter</h4>
             <p class="description__text">
-              This is the secription for the Email
+              Newsletter email for NakedWines about new bottles for sale.
             </p>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               target="_blank"
               href="https://optimistic-einstein-417864.netlify.app/"
               class="btn btn-outline"
@@ -422,13 +428,20 @@
           </div>
         </div>
         <div class="test-block">
-          <img class="email2__img" src="./images/email_robinhood.jpg" alt="" />
+          <img
+            class="email2__img"
+            src="./images/email_robinhood.jpg"
+            alt="HTML email project two Robinhood snacks newsletter"
+          />
           <div class="description">
             <h4 class="description__heading">Newsletter</h4>
             <p class="description__text">
-              This is the secription for the Email
+              Newletter from RobinHood on stocks that are on the rise and
+              investment news.
             </p>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               target="_blank"
               href="https://gifted-leavitt-d651f9.netlify.app/"
               class="btn btn-outline"
@@ -440,38 +453,61 @@
           <img
             class="email3__img"
             src="./images/email_reverbnation.png"
-            alt=""
+            alt="HTML email project three reverb nation promotional"
           />
           <div class="description">
             <h4 class="description__heading">Promotional</h4>
             <p class="description__text">
-              This is the secription for the Email
+              Promotional email for Reverb Nation explaining the benefits of
+              livestreaming.
             </p>
-            <a href="#" class="btn btn-outline">View Project</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://cocky-hugle-7a2dd9.netlify.app/"
+              class="btn btn-outline"
+              >View Project</a
+            >
           </div>
         </div>
         <div class="test-block">
           <img
             class="email4__img"
             src="./images/email_nakedwines_transaction.png"
-            alt=""
+            alt="HTML email project four naked wines transaction receipt"
           />
           <div class="description">
             <h4 class="description__heading">Transactional</h4>
             <p class="description__text">
-              This is the secription for the Email
+              Receipt from NakedWines after a purchase.
             </p>
-            <a href="#" class="btn btn-outline">View Project</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://mystifying-wozniak-f10866.netlify.app/"
+              class="btn btn-outline"
+              >View Project</a
+            >
           </div>
         </div>
         <div class="test-block">
-          <img class="email5__img" src="./images/email_brandcrowd.png" alt="" />
+          <img
+            class="email5__img"
+            src="./images/email_brandcrowd.png"
+            alt="HTML email project five brandcrowd promotional"
+          />
           <div class="description">
             <h4 class="description__heading">Promotional</h4>
             <p class="description__text">
-              This is the secription for the Email
+              Email from BrandCrowd on logo creation and sign up reasons.
             </p>
-            <a href="#" class="btn btn-outline">View Project</a>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://sleepy-pike-ad7dc1.netlify.app/"
+              class="btn btn-outline"
+              >View Project</a
+            >
           </div>
         </div>
       </div>

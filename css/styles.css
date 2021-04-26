@@ -188,7 +188,7 @@ a {
 header {
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,7 +310,7 @@ header {
 .square {
   width: 500px;
   height: 500px;
-  background-image: linear-gradient(45deg, #a239f754 60%, #3c91ff 100%);
+  background-image: linear-gradient(45deg, #a239f754 60%, #f374ffad 100%);
   z-index: 1;
   position: absolute;
   top: 30px;

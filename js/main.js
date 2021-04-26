@@ -28,7 +28,7 @@ websitesSwitch.addEventListener('click', () => {
 //scroll to
 
 const projectsBtn = document.getElementById('projects-btn');
-const projectsSection = document.getElementById('projects-section');
+const projectsSection = document.getElementById('projects');
 
 projectsBtn.addEventListener('click', () => {
     console.log('clicked');
