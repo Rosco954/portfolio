@@ -1,0 +1,14 @@
+footer {
+  background: $secondary;
+  @include flex(column, center, center);
+  color: white;
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 50px;
+  }
+}
+
+.socials {
+  @include flex(row, center, flex-end);
+}
