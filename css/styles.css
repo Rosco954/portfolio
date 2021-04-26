@@ -511,22 +511,32 @@ header {
 .email3__img {
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: -160px;
-     object-position: -160px;
+  -o-object-position: -28px;
+     object-position: -28px;
 }
 
 .email4__img {
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: -160px;
-     object-position: -160px;
+  -o-object-position: -28px;
+     object-position: -28px;
 }
 
 .email5__img {
   -o-object-fit: contain;
      object-fit: contain;
-  -o-object-position: -170px;
-     object-position: -170px;
+}
+
+.landing-one-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.landing-two-img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: -20px;
+     object-position: -20px;
 }
 
 .description {
