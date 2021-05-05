@@ -31,7 +31,9 @@ const projectsBtn = document.getElementById('projects-btn');
 const projectsSection = document.getElementById('projects');
 
 projectsBtn.addEventListener('click', () => {
-    console.log('clicked');
+
+    //focus email switch for projects
+    setTimeout(() => {emailSwitch.focus();}, 400)
     scrollToSection(projectsSection);
 })
 
