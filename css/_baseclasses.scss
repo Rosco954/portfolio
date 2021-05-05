@@ -185,3 +185,9 @@ a {
   letter-spacing: 1px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+  .btn {
+    font-size: 1.8rem;
+  }
+}

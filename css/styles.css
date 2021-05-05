@@ -190,6 +190,12 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .btn {
+    font-size: 1.8rem;
+  }
+}
+
 header {
   position: relative;
   height: 100vh;
@@ -640,8 +646,9 @@ header {
 }
 
 .projects {
+  overflow-x: hidden;
   position: relative;
-  height: 100vh;
+  padding: 80px;
   background-image: -webkit-gradient(linear, left top, right top, from(#8ec5fc), to(#e0c3fc));
   background-image: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
 }
@@ -681,6 +688,7 @@ header {
       grid-template-rows: repeat(2, 1fr);
   gap: 0px;
   width: 60%;
+  min-width: 340px;
   border-radius: 25px;
 }
 
@@ -797,7 +805,7 @@ header {
 .projects__square1 {
   background-image: linear-gradient(315deg, #a239f788 30%, #f374ff 100%);
   position: absolute;
-  top: 450px;
+  bottom: 50px;
   left: 200px;
   width: 500px;
   height: 500px;
@@ -808,12 +816,73 @@ header {
 .projects__square2 {
   background-image: linear-gradient(49deg, #2929ff88 0%, #807eff5e 100%);
   position: absolute;
-  top: 80px;
+  top: 165px;
   right: 300px;
   width: 250px;
   height: 250px;
   border-radius: 25px;
   z-index: 0;
+}
+
+@media screen and (max-width: 1870px) {
+  .projects__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .projects__container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[0];
+        grid-template-rows: repeat(0, 1fr);
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .projects {
+    padding: 40px 0;
+  }
+  .projects__switches {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projects__switches .btn {
+    margin-bottom: 15px;
+  }
+  .projects__square1 {
+    bottom: 20px;
+  }
+  .projects__square2 {
+    top: 240px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .projects__container {
+    min-width: 300px;
+  }
+  .test-block {
+    width: 280px;
+    height: 280px;
+  }
+  .description__heading {
+    font-size: 2rem;
+  }
+  .description__text {
+    font-size: 1.8rem;
+  }
 }
 
 footer {
