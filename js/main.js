@@ -5,8 +5,6 @@ const emailContainer = document.getElementById('emails');
 const landingPageContainer = document.getElementById('landing-pages');
 const websitesContainer = document.getElementById('websites');
 
-emailSwitch.focus();
-
 emailSwitch.addEventListener('click', () => {
     emailContainer.style.display = 'grid';
     landingPageContainer.style.display = 'none';
