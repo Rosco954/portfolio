@@ -91,6 +91,7 @@ a {
 
 .block {
   padding: 3rem 0;
+  overflow-y: hidden;
 }
 
 /*buttons*/
@@ -198,8 +199,8 @@ a {
 
 header {
   position: relative;
-  height: 100vh;
-  overflow-x: hidden;
+  height: 110vh;
+  overflow: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,8 +276,8 @@ header {
 .hero__svg1, .hero__svg2, .hero__svg3 {
   position: absolute;
   top: 15%;
-  left: 35%;
-  width: 70px;
+  left: 50%;
+  width: 150px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   fill: #807eff;
@@ -447,9 +448,9 @@ header {
   position: relative;
   background-image: -webkit-gradient(linear, left top, right top, from(#8ec5fc), to(#e0c3fc));
   background-image: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 90px 20px;
-  height: 100vh;
+  height: 110vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
