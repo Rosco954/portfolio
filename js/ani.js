@@ -51,7 +51,7 @@ if (window.screen.width > 768){
         ease: 'power1'
     }, '>-0.5')
     
-    let aboutRevealed = new ScrollMagic.Scene({triggerElement: "#about"}).setTween(tlAbout).addIndicators().addTo(homeController);  
+    let aboutRevealed = new ScrollMagic.Scene({triggerElement: "#about"}).setTween(tlAbout).addTo(homeController);  
     
     //projects animations
     const tlProjects = new gsap.timeline();
@@ -99,7 +99,7 @@ if (window.screen.width > 768){
         ease: 'sine'
     });
 
-    let projectsRevealed = new ScrollMagic.Scene({triggerElement: "#projects"}).setTween(tlProjects).addIndicators().addTo(homeController);  
+    let projectsRevealed = new ScrollMagic.Scene({triggerElement: "#projects"}).setTween(tlProjects).addTo(homeController);  
 
 }
 
