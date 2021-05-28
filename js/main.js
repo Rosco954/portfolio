@@ -28,19 +28,19 @@ websitesSwitch.addEventListener('click', () => {
 const projectsBtn = document.getElementById('projects-btn');
 const projectsSection = document.getElementById('projects');
 
-// projectsBtn.addEventListener('click', () => {
+projectsBtn.addEventListener('click', () => {
 
-//     //focus email switch for projects
-//     setTimeout(() => {emailSwitch.focus();}, 400)
-//     scrollToSection(projectsSection);
-// })
+    //focus email switch for projects
+    setTimeout(() => {emailSwitch.focus();}, 400)
+    scrollToSection(projectsSection);
+})
 
-// function scrollToSection(s){
-//     const offsetTop = s.offsetTop; 
+function scrollToSection(s){
+    const offsetTop = s.offsetTop; 
 
-//     scroll({
-//         top: offsetTop,
-//         behavior: "smooth"
-//     });
+    scroll({
+        top: offsetTop,
+        behavior: "smooth"
+    });
 
-// }
+}
