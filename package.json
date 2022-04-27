@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rosco954/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rosco954/portfolio/issues"
+  },
+  "homepage": "https://github.com/Rosco954/portfolio#readme",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "gsap": "^3.10.4",
+    "parcel": "^2.5.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0"
+  }
+}
