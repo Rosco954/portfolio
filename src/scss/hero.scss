@@ -1,6 +1,6 @@
-header {
+.hero {
   position: relative;
-  height: 110vh;
+  min-height: 800px;
   overflow: hidden;
   width: 100%;
   @include flex(row, center, center);
@@ -14,7 +14,6 @@ header {
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.425);
   width: 65%;
   border-radius: 25px;
-  overflow: hidden;
   z-index: 2;
 }
 
@@ -26,11 +25,13 @@ header {
   h1 {
     font-weight: 300;
     font-size: 9rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
   }
 
   h2 {
     font-size: 4rem;
     font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.397);
   }
 
   .btn {

@@ -33,6 +33,7 @@ body {
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.5;
+  background-image: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 .container {
@@ -177,6 +178,7 @@ a {
 }
 
 .btn {
+  display: block;
   margin: 20px 10px;
   outline: 0;
   font-size: 2.5rem;
@@ -191,4 +193,54 @@ a {
   .btn {
     font-size: 1.8rem;
   }
+}
+
+//flex
+
+.flex-column {
+  @include flex(column, center, center);
+}
+
+.flex-column-start {
+  @include flex(column, center, flex-start);
+}
+
+.flex-column-end {
+  @include flex(column, end, center);
+}
+
+.flex-column-just-start {
+  @include flex(column, flex-start, flex-start);
+}
+
+.flex-column-between {
+  @include flex(column, space-between, center);
+}
+
+.flex-row {
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+}
+
+.flex-row-between {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+}
+
+.flex-row-around {
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+
+.flex-row-start {
+  @include flex(row, center, flex-start);
+  flex-wrap: wrap;
+}
+
+.flex-row-just-start {
+  @include flex(row, flex-start, center);
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
 }
