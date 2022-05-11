@@ -538,6 +538,7 @@ a {
 
 .hero__block2 .hero__grid-container {
   align-self: center;
+  padding: 10px;
 }
 
 .hero__img {
