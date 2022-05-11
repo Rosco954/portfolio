@@ -5,6 +5,10 @@
   width: 100%;
   @include flex(row, center, center);
   background-image: linear-gradient(90deg, #8ec5fc 0%, #e0c3fc 100%);
+
+  &__img-mobile{
+    display: none;
+  }
 }
 
 .hero__container {
@@ -15,6 +19,7 @@
   width: 65%;
   border-radius: 25px;
   z-index: 2;
+  min-width: 1150px;
 }
 
 .hero__block1 {
@@ -42,37 +47,34 @@
 }
 
 .hero__block2 {
-  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+
+  .hero__grid-container{
+    align-self: center;
+  }
 }
 
 .hero__img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 250px;
+  padding: 0 55px;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .hero__svg1 {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  width: 150px;
-  transform: translate(-50%, -50%);
+  padding: 0 55px;
+  width: 100%;
   fill: $secondary;
 }
 
 .hero__svg2 {
   @extend .hero__svg1;
-  top: 45%;
-  left: 20%;
   fill: $accent;
 }
 
 .hero__svg3 {
   @extend .hero__svg1;
-  top: 30%;
-  left: 80%;
   fill: $primary;
 }
 
@@ -123,6 +125,13 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .hero__img-mobile{
+    border-radius: 50%;
+    max-height: 200px;
+    display: block;
+    margin-top: 20px;
+  }
+
   .circle {
     left: 100px;
     top: 80px;
@@ -139,7 +148,12 @@
   }
 
   .hero__container {
-    @include grid(1, 2, 0px);
+    @include flex(column, center, center);
+    min-width:auto;
+
+    .btn{
+      width: 100%;
+    }
   }
 
   .hero__block1 {
@@ -147,11 +161,16 @@
 
     h1 {
       font-size: 6rem;
+      margin-top: 0;
     }
 
     h2 {
       font-size: 3rem;
     }
+  }
+
+  .hero__block2{
+    display: none;
   }
 
   .hero__img {
@@ -175,6 +194,18 @@
     top: 20%;
     width: 80px;
   }
+}
+
+@media screen and (max-width: 1151px) {
+  .hero__container{
+    width: 90%;
+    min-width: none;
+
+    .btn{
+      width: 100%;
+    }
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -202,7 +233,8 @@
 
   .hero__container {
     @include flex(column, center, center);
-    width: 300px;
+    min-width: 300px;
+    width: 95%;
     height: 50%;
   }
 

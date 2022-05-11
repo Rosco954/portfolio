@@ -545,7 +545,7 @@ const projectsEnter = (container)=>{
         scale: 0,
         duration: 0.5,
         stagger: 0.25
-    }, ">-0.5");
+    }, ">-3.5");
     return tl;
 };
 const projectsLeave = (container)=>{
@@ -568,24 +568,21 @@ const projectsLeave = (container)=>{
 };
 const homeEnter = (container)=>{
     let tl = new _all.gsap.timeline();
-    tl.from(".fade-left", {
+    tl.from(".hero__container", {
+        opacity: 0,
+        y: 500
+    }).from(".fade-left", {
         opacity: 0,
         x: -800,
         duration: 0.5,
         stagger: 0.1,
         ease: "power1"
-    }).from(".btn", {
-        opacity: 0,
-        x: -800,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "power1"
-    }, ">-0.5").from(".scale", {
+    }).from(".scale", {
         opacity: 0,
         scale: 0,
         duration: 0.5,
         stagger: 0.25
-    }, ">0.4");
+    });
     return tl;
 };
 const homeLeave = (container)=>{
@@ -596,18 +593,15 @@ const homeLeave = (container)=>{
         duration: 0.5,
         stagger: 0.1,
         ease: "power1"
-    }).to(".btn", {
-        opacity: 0,
-        x: -800,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "power1"
-    }, ">-0.5").to(".scale", {
+    }).to(".scale", {
         opacity: 0,
         scale: 0,
         duration: 0.5,
         stagger: 0.25
-    }, ">0.4");
+    }).to(".hero__container", {
+        opacity: 0,
+        y: 500
+    });
     return tl;
 };
 const aboutEnter = (container)=>{

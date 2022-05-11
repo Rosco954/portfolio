@@ -17,7 +17,7 @@ const projectsEnter = (container) => {
     .from(
       ".scale",
       { opacity: 0, scale: 0, duration: 0.5, stagger: 0.25 },
-      ">-0.5"
+      ">-3.5"
     );
 
   return tl;
@@ -48,23 +48,15 @@ const projectsLeave = (container) => {
 const homeEnter = (container) => {
   let tl = new gsap.timeline();
 
-  tl.from(".fade-left", {
-    opacity: 0,
-    x: -800,
-    duration: 0.5,
-    stagger: 0.1,
-    ease: "power1",
-  })
-    .from(
-      ".btn",
-      { opacity: 0, x: -800, duration: 0.5, stagger: 0.1, ease: "power1" },
-      ">-0.5"
-    )
-    .from(
-      ".scale",
-      { opacity: 0, scale: 0, duration: 0.5, stagger: 0.25 },
-      ">0.4"
-    );
+  tl.from(".hero__container", { opacity: 0, y: 500 })
+    .from(".fade-left", {
+      opacity: 0,
+      x: -800,
+      duration: 0.5,
+      stagger: 0.1,
+      ease: "power1",
+    })
+    .from(".scale", { opacity: 0, scale: 0, duration: 0.5, stagger: 0.25 });
 
   return tl;
 };
@@ -79,16 +71,8 @@ const homeLeave = (container) => {
     stagger: 0.1,
     ease: "power1",
   })
-    .to(
-      ".btn",
-      { opacity: 0, x: -800, duration: 0.5, stagger: 0.1, ease: "power1" },
-      ">-0.5"
-    )
-    .to(
-      ".scale",
-      { opacity: 0, scale: 0, duration: 0.5, stagger: 0.25 },
-      ">0.4"
-    );
+    .to(".scale", { opacity: 0, scale: 0, duration: 0.5, stagger: 0.25 })
+    .to(".hero__container", { opacity: 0, y: 500 });
 
   return tl;
 };
